@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">使用說明</a>
+            <a href="#login" class="w3-bar-item w3-button w3-padding-large w3-hide-small">登入問題</a>
+            <a href="#use" class="w3-bar-item w3-button w3-padding-large w3-hide-small">使用問題</a>
+            <a href="#mana" class="w3-bar-item w3-button w3-padding-large w3-hide-small">管理問題</a>
+            <a href="#bye" class="w3-bar-item w3-button w3-padding-large w3-hide-small">購買問題</a>
+            <!-- <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div> -->
+            <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+                    class="fa fa-search"></i></a> -->
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#login" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">登入問題</a>
+        <a href="#use" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">使用問題</a>
+        <a href="#mana" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">管理問題</a>
+        <a href="#bye" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">購買問題</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+        <!-- The Band Section -->
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="login">
+            <h2 class="w3-wide w3-center ">登入問題</h2>
+
+
+            <button onclick="Accordions('Demo11')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>如何登入使用APP</h3>
+            </button>
+
+            <div id="Demo11" class="w3-container w3-panel w3-margin-left w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>手機：ios 打開 Safari 瀏覽器，在網址列輸入 <a href="mdb123.web.app"><span
+                            class="w3-text-blue">mdb123.web.app</span></a>。
+                </h5>
+                </p>
+                <p>
+                <h5>手機：andriod 打開 Chrome 瀏覽器，在網址列輸入 <a href="mdb123.web.app" class="w3-text-blue">mdb123.web.app</a>。
+                </h5>
+                </p>
+                <p>
+                <h5>平板：與手機相同。</h5>
+                </p>
+                <p>
+                <h5>電腦：打開 Chrome、Firefox、Safari 任何一種瀏覽器，在網址列輸入 <a href="mdb123.web.app"
+                        class="w3-text-blue">mdb123.web.app</a>。</h5>
+                </p>
+                <p>
+                <h5>在 Line或 Facebook訊息中直接點擊連結，請注意是否用其內建的瀏覽器開啟，盡量用外部瀏覽器開啟。</h5>
+                </p>
+            </div>
+
+            <div class="w3-containner w3-margin-bottom" style="margin-bottom: 40px;"> </div>
+            <button onclick="Accordions('Demo12')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>重複登入免輸密碼</h3>
+            </button>
+
+            <div id="Demo12" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>手機、平板、電腦輸入密碼時，都會詢問要不要記住密碼，若選擇要記住，下次登入就可用自動完成將帳密帶入。</h5>
+                </p>
+            </div>
+
+
+            <button onclick="Accordions('Demo13')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>如何設成APP</h3>
+            </button>
+
+            <div id="Demo13" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>1.點擊 Safari下方紅色圈選處</h5>
+                </p>
+                <img src="./image/image-20201018190139965.png" style="width:200px;">
+                <p>
+                <h5>2.選擇加入主畫面</h5>
+                </p>
+                <img src="image/image-20201018190314766.png" style="width:200px;">
+            </div>
+
+
+            <button onclick="Accordions('Demo14')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>已註冊帳號了不能使用</h3>
+            </button>
+
+            <div id="Demo14" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>先註冊帳號，後到註冊信箱收信，點選驗證連結，通過email驗證。</h5>
+                </p>
+                <p>
+                <h5>此時還不能登入，要等待管理員審核通過，才可以登入使用。</h5>
+                </p>
+            </div>
+
+
+            <button onclick="Accordions('Demo15')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>APP更新</h3>
+            </button>
+
+            <div id="Demo15" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>在主畫面中直接將APP圖示刪除，再用上述設定APP方式重新加入。</h5>
+                </p>
+            </div>
+
+
+            <button onclick="Accordions('Demo16')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>覺得資料有問題</h3>
+            </button>
+
+            <div id="Demo16" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>先登出，再登入可讀到最新資料。</h5>
+                </p>
+            </div>
+        </div>
+
+        <!-- The Tour Section -->
+        <div class="" id="use">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center">使用問題</h2>
+
+
+                <button onclick="Accordions('Demo21')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                    <h3>增加或刪除照片</h3>
+                </button>
+
+                <div id="Demo21" class="w3-container w3-panel w3-margin-left w3-hide">
+                    <p>
+                    <h5>1.增加照片</h5>
+                    </p>
+                    <img src="image/2020-10-18_232100.png" style="width:300px;">
+                    <img src="./image/2020-10-18_232253.png" style="width:300px;">
+                    <p>
+                    <h5>2.刪除照片</h5>
+                    </p>
+                    <img src="./image/2020-10-18_232717.png" style="width:300px;">
+                </div>
+
+
+                <button onclick="Accordions('Demo22')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                    <h3>設定為頭像</h3>
+                </button>
+
+                <div id="Demo22" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                    <p>
+                    <h5>設定為頭像</h5>
+                    </p>
+                </div>
+
+
+                <button onclick="Accordions('Demo23')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                    <h3>多筆資料匯出檔案</h3>
+                </button>
+
+                <div id="Demo23" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                    <p>
+                    <h5>1.先查詢符合條件的資料</h5>
+                    </p>
+                </div>
+
+
+                <button onclick="Accordions('Demo24')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                    <h3>列印單筆資料</h3>
+                </button>
+
+                <div id="Demo24" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                    <p>
+                    <h5>列印資料</h5>
+                    </p>
+                </div>
+
+
+                <button onclick="Accordions('Demo25')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                    <h3>增加、刪除、修改</h3>
+                </button>
+
+                <div id="Demo25" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                    <p>
+                    <h5>增加、刪除、修改</h5>
+                    </p>
+                </div>
+
+
+                <button onclick="Accordions('Demo26')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                    <h3>查詢</h3>
+                </button>
+
+                <div id="Demo26" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                    <p>
+                    <h5>查詢</h5>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="mana">
+            <h2 class="w3-wide w3-center">管理問題</h2>
+
+
+            <button onclick="Accordions('Demo31')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>核准使用者</h3>
+            </button>
+
+            <div id="Demo31" class="w3-container w3-panel w3-margin-left w3-hide">
+                <p>
+                <h5>核准使用者</h5>
+                </p>
+            </div>
+
+
+            <button onclick="Accordions('Demo32')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>管理使用者</h3>
+            </button>
+
+            <div id="Demo32" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>管理使用者</h5>
+                </p>
+            </div>
+
+
+            <button onclick="Accordions('Demo33')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>設定系統管理員</h3>
+            </button>
+
+            <div id="Demo33" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>設定系統管理員</h5>
+                </p>
+            </div>
+
+
+            <button onclick="Accordions('Demo34')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>忘記或重設密碼</h3>
+            </button>
+
+            <div id="Demo34" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>忘記或重設密碼</h5>
+                </p>
+            </div>
+
+
+            <button onclick="Accordions('Demo35')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>刪除使用者、重新註冊</h3>
+            </button>
+
+            <div id="Demo35" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>刪除使用者重新註冊</h5>
+                </p>
+            </div>
+
+
+            <button onclick="Accordions('Demo36')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                <h3>公告事項</h3>
+            </button>
+
+            <div id="Demo36" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                <p>
+                <h5>公告事項</h5>
+                </p>
+            </div>
+        </div>
+
+        <div class="" id="bye">
+
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center">購買問題</h2>
+
+                <button onclick="Accordions('Demo4')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                    <h3>運行環境</h3>
+                </button>
+
+                <div id="Demo4" class="w3-container w3-hide" style="margin-bottom: 50px;">
+                    <p>
+                    <h5>伺服器 6-20萬</h5>
+                    </p>
+                    <p>
+                    <h5>防火牆 5-10萬</h5>
+                    </p>
+                    <p>
+                    <h5>網路設備 2萬</h5>
+                    </p>
+                    <p>
+                    <h5>網路頻寬、網址 2萬/年</h5>
+                    </p>
+                    <p>
+                    <h5>作業系統、資料庫、網站、傳輸加密 10萬</h5>
+                    </p>
+                    <p>
+                    <h5>客製化軟體 （手機、平板、電腦）30萬</h5>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Page Content -->
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    </footer>
+
+    <script>
+
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // 手風琴
+        function Accordions(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
