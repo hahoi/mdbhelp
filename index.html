@@ -198,6 +198,9 @@
                     <img src="image/2020-10-18_232100.png" style="width:300px;">
                     <img src="./image/2020-10-18_232253.png" style="width:300px;">
                     <p>
+                        <h5>步驟3「按我選擇照片」若不做動，要按久一點。</h5>
+                        </p>
+                        <br /><br /><br />
                     <h5>2.刪除照片</h5>
                     </p>
                     <img src="./image/2020-10-18_232717.png" style="width:300px;">
@@ -238,16 +241,17 @@
                 </div>
 
 
-                <!-- <button onclick="Accordions('Demo25')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                    <h3>增加、刪除、修改</h3>
+                <button onclick="Accordions('Demo25')" class="w3-button w3-block w3-left-align w3-border-bottom">
+                    <h3>增加分類</h3>
                 </button>
 
                 <div id="Demo25" class="w3-container w3-hide" style="margin-bottom: 50px;">
                     <p>
-                    <h5>…………………</h5>
+                    <h5>現有分類中找不到，按「編輯分類」新增。</h5>
                     </p>
+                    <img src="./image/2020-10-21_153917.png" style="width:300px;">
                 </div> 
- -->
+
 
                 <button onclick="Accordions('Demo26')" class="w3-button w3-block w3-left-align w3-border-bottom">
                     <h3>查詢</h3>
@@ -397,6 +401,7 @@
         function myFunction() {
             var x = document.getElementById("navDemo");
             if (x.className.indexOf("w3-show") == -1) {
+                CloseAccordions()
                 x.className += " w3-show";
             } else {
                 x.className = x.className.replace(" w3-show", "");
