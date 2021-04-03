@@ -1,455 +1,658 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>MDB使用說明</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link
-    href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional"
-    rel="stylesheet">
-<style>
-    body {
-        /* font-family: "Lato", sans-serif */
-        font-family: 'Noto Sans TC', sans-serif;
-    }
 
-    .w3-NotoSanse {
-        font-family: 'Noto Sans TC', sans-serif;
-    }
-</style>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>使用說明</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+
+</head>
 
 <body>
+  <div style="margin: 0 auto; max-width: 800px;">
+    <div class="text-center">
+      <h3>使用說明</h3>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <h5>登入問題</h5>
+            </button>
+          </h2>
+        </div>
 
-    <!-- Navbar -->
-    <div class="w3-top w3-NotoSanse">
-        <div class="w3-bar w3-black w3-card">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
-                    class="fa fa-bars"></i></a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-large">使用說明</a>
-            <a href="#login" class="w3-bar-item w3-button w3-padding-large w3-hide-small">登入問題</a>
-            <a href="#use" class="w3-bar-item w3-button w3-padding-large w3-hide-small">使用問題</a>
-            <a href="#mana" class="w3-bar-item w3-button w3-padding-large w3-hide-small">管理問題</a>
-            <a href="#bye" class="w3-bar-item w3-button w3-padding-large w3-hide-small">購買問題</a>
-            <!-- <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="accordion" id="accordion11">
+              <div class="card">
+                <div class="card-header" id="heading11">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left" type="button" data-toggle="collapse"
+                      data-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                      如何登入使用APP
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse11" class="collapse" aria-labelledby="heading11" data-parent="#accordion11">
+                  <div class="card-body">
+                    <p>
+                      手機：ios 打開 Safari 瀏覽器，在網址列輸入 <a href="https://modatabank.web.app"
+                        target="_blank">modatabank.web.app</a>。
+                    </p>
+                    <p>
+                      手機：andriod 打開 Chrome 瀏覽器，在網址列輸入 <a href="https://modatabank.web.app"
+                        target="_blank">modatabank.web.app</a>。
+                    </p>
+                    <p>平板：與手機相同。</p>
+                    <p>
+                      電腦：打開 Chrome、Firefox、Safari 任何一種瀏覽器，在網址列輸入 <a href="https://modatabank.web.app"
+                        target="_blank">modatabank.web.app</a>。
+                    </p>
+                    <p>
+                      在 Line或 Facebook訊息中直接點擊連結，注意是否用其內建的瀏覽器開啟。請複製連結使用外部瀏覽器(safari、chrome)開啟。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading12">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                      如何設定成桌面APP
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse12" class="collapse" aria-labelledby="heading12" data-parent="#accordion11">
+                  <div class="card-body">
+
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm">
+                          <p>1.點擊 Safari下方紅色圈選處</p>
+                        </div>
+                        <div class="col-sm">
+                          <img src="./image/image-20201018190139965.png" style="width:200px;">
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="row">
+                        <div class="col-sm">
+                          <p>2.選擇加入主畫面</p>
+                        </div>
+                        <div class="col-sm">
+                          <img src="image/image-20201018190314766.png" style="width:200px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading13">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                      重複登入免輸密碼
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse13" class="collapse" aria-labelledby="heading13" data-parent="#accordion11">
+                  <div class="card-body">
+                    手機、平板、電腦輸入密碼時，都會詢問要不要記住密碼，若選擇要記住，下次登入就可用自動完成將帳密帶入。
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading14">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left" type="button" data-toggle="collapse"
+                      data-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                      忘記或重設密碼
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse14" class="collapse" aria-labelledby="heading14" data-parent="#accordion11">
+                  <div class="card-body">
+                    <img src="./image/image-20201018185057384.png" style="width:300px;">
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading15">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                      已註冊帳號，不能登入使用
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse15" class="collapse" aria-labelledby="heading15" data-parent="#accordion11">
+                  <div class="card-body">
+                    <ol>
+                      <li>先註冊帳號，後到註冊信箱收信，點選驗證連結，通過email驗證。</li>
+                      <li>此時還不能登入，要等待管理員審核通過，才可以登入使用。</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="card">
+                <div class="card-header" id="heading16">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                      Collapsible Group Item #16
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse16" class="collapse" aria-labelledby="heading16" data-parent="#accordion11">
+                  <div class="card-body">
+                    And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by
+                    default.
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
       </div>
-    </div> -->
-            <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
-                    class="fa fa-search"></i></a> -->
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h5>如何使用</h5>
+            </button>
+          </h2>
         </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="accordion" id="accordion21">
+              <div class="card">
+                <div class="card-header" id="heading21">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left" type="button" data-toggle="collapse"
+                      data-target="#collapse21" aria-expanded="false" aria-controls="collapse21">
+                      查詢資料
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse21" class="collapse" aria-labelledby="heading21" data-parent="#accordion21">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm">
+                          <p>1. 先設定查詢條件(縣市、分類、姓名、星級、紅點)</p>
+                          <p>2. 按「雲端搜尋」</p>
+                        </div>
+                        <div class="col-sm">
+                          <img src="image\2021-04-01_164026.png" style="width:300px;">
+                        </div>
+                      </div>
+                      <hr class="my-5">
+                      <div class="row">
+                        <div class="col-sm">
+                          <p>1. 符合條件的資料會顯示在螢幕上，要再進一步搜尋可用「本機搜尋」功能。</p>
+                          <p>2. 可用空白隔開多個關鍵字過濾資料</p>
+                        </div>
+                        <div class="col-sm">
+                          <img src="./image/2020-10-19_114045.png" style="width:300px;">
+                        </div>
+                      </div>
+                      <hr class="my-5">
+                      <div class="row">
+                        <div class="col-sm">
+                          <h5 class="text-center">列出全部資料</h5>
+                          <ol>
+                            <li>清空過濾條件</li>
+                            <li>按「雲端搜尋」</li>
+                            <li>按「列出全部資料」</li>
+                            <li></li>
+                            <li></li>
+                          </ol>
+                        </div>
+                        <div class="col-sm">
+                          <img src="image\2021-04-01_170134.png" style="width:300px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading22">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                      新增資料
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse22" class="collapse" aria-labelledby="heading22" data-parent="#accordion21">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm">
+                          <p>按「+」開始新增資料</p>
+                        </div>
+                        <div class="col-sm">
+                          <img src="image\2021-04-01_171437.png" style="width:300px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading23">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapse23" aria-expanded="false" aria-controls="collapse23">
+                      修改、刪除、列印資料
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse23" class="collapse" aria-labelledby="heading23" data-parent="#accordion21">
+                  <div class="card-body">
+
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm">
+                          <p>先進入詳細資料畫面，選擇上方功能鍵</p>
+                          <p>列印、修改、刪除單筆資料</p>
+                        </div>
+                        <div class="col-sm">
+                          <img src="image\2021-04-01_172225.png" style="width:300px;">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-header" id="heading24">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left" type="button" data-toggle="collapse"
+                      data-target="#collapse24" aria-expanded="false" aria-controls="collapse24">
+                      新增、刪除照片
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse24" class="collapse" aria-labelledby="heading24" data-parent="#accordion21">
+                  <div class="card-body">
+
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm">
+                          <ul>
+                            <li>要先建立個人基本資料，存檔後後，才會出現上傳照片畫面選項。</li>
+                            <li>預設上傳的第一張照片為個人頭像。</li>
+                          </ul>
+                        </div>
+                        <div class="col-sm">
+                          <img src="image\2021-04-03_095454.png" style="width:300px;">
+                          <img src="image\2021-04-03_094944.png" style="width:300px;">
+                        </div>
+                      </div>
+                      <hr class="my-5">
+                      <div class="row">
+                        <div class="col-sm">
+                          <h5 class="text-center">上傳新的照片</h5>
+                          <ol>
+                            <li>進入詳細資料畫面，選擇「修改」。</li>
+                            <li>選「上傳照片」</li>
+                            <li>選「按我選擇照片」</li>
+                          </ol>
+                        </div>
+                        <div class="col-sm">
+                          <img src="image/2020-10-18_232100.png" style="width:300px;">
+                          <img src="./image/2020-10-18_232253.png" style="width:300px;">
+                        </div>
+                      </div>
+                      <hr class="my-5">
+                      <div class="row">
+                        <div class="col-sm">
+                          <h5 class="text-center">刪除照片</h5>
+                        </div>
+                        <p>刪除照片</p>
+                        <div class="col-sm">
+                          <img src="./image/2020-10-18_232717.png" style="width:300px;">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading25">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapse25" aria-expanded="false" aria-controls="collapse25">
+                      設定為頭像
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse25" class="collapse" aria-labelledby="heading25" data-parent="#accordion21">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm">
+                          <p>有兩張照片以上，可選其中一張設定為頭像。</p>
+                          <ol>
+                            <li>進入詳細資料畫面，選擇「修改」</li>
+                            <li>選「上傳照片」</li>
+                            <li>選「設定頭像」</li>
+                          </ol>
+                        </div>
+                        <div class="col-sm">
+                          <img src="image\2021-04-03_101845.png" style="width:300px;">
+                          <img src="image\2021-04-03_102937.png" style="width:300px;">
+                          <img src="image\2021-04-03_095747.png" style="width:300px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="heading26">
+                    <h2 class="mb-0">
+                      <button class="btn text-info btn-block text-left collapsed" type="button" data-toggle="collapse"
+                        data-target="#collapse26" aria-expanded="false" aria-controls="collapse26">
+                        增加分類
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapse26" class="collapse" aria-labelledby="heading26" data-parent="#accordion21">
+                    <div class="card-body">
+
+
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-sm">
+                            <p>現有分類中找不到，按「編輯分類」新增。</p>
+                          </div>
+                          <div class="col-sm">
+                            <img src="./image/2020-10-21_153917.png" style="width:300px;">
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h5>匯入、匯出</h5>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+
+
+            <div class="accordion" id="accordion13">
+              <div class="card">
+                <div class="card-header" id="heading31">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left" type="button" data-toggle="collapse"
+                      data-target="#collapse31" aria-expanded="false" aria-controls="collapse31">
+                      匯出Excel
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapse31" class="collapse " aria-labelledby="heading31" data-parent="#accordion13">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm">
+                          <ol>
+                            <li>先查詢出想要匯出的資料</li>
+                            <li>選「匯出」</li>
+                            <li>不輸入查詢條件，可匯出全部資料</li>
+                          </ol>
+                        </div>
+                        <div class="col-sm">
+                          <img src="image\2021-04-03_104411.png" style="width:300px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading32">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapse32" aria-expanded="false" aria-controls="collapse32">
+                      匯入Excel（需用電腦操作）
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse32" class="collapse" aria-labelledby="heading32" data-parent="#accordion13">
+                  <div class="card-body">
+                    <div class="accordion" id="accordion132">
+                      <div class="card">
+                        <div class="card-header" id="heading321">
+                          <h2 class="mb-0">
+                            <button class="btn text-primary btn-block text-left" type="button" data-toggle="collapse"
+                              data-target="#collapse321" aria-expanded="false" aria-controls="collapse321">
+                              1.匯入Excel檔的格式
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapse321" class="collapse" aria-labelledby="heading321" data-parent="#accordion132">
+                          <div class="card-body">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-sm">
+                                  <ul>
+                                    <li>可利用匯出的檔案，當作匯入檔的格式。(工作表名稱：工作表一)<a href="excel\匯入格式一.xlsx" target="_blank">範例一</a>
+                                    </li>
+                                    <li></li>
+                                    <li>名字欄位不可空白</li>
+                                    <li>標題欄位名稱必須相符，內容可以空白。</li>
+                                    <li>標題不必列出所有欄位，只要列出想匯入的欄位即可。<a href="excel\匯入格式二.xlsx" target="_blank">範例二</a>
+                                    </li>
+                                    <li>等級：需為0-5之間的數字或空白</li>
+                                    <li></li>
+                                    <li>超過500筆資料以上，將資料分別存放在工作表上，每個工作表資料不超過500筆，例：工作表一、工作表二、......<a
+                                        href="excel\匯入格式三.xlsx" target="_blank">範例三</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="heading322">
+                          <h2 class="mb-0">
+                            <button class="btn text-primary btn-block text-left collapsed" type="button"
+                              data-toggle="collapse" data-target="#collapse322" aria-expanded="false"
+                              aria-controls="collapse322">
+                              2.選擇匯入的Excel檔及工作表。
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapse322" class="collapse" aria-labelledby="heading322" data-parent="#accordion132">
+                          <div class="card-body">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-sm">
+                                  <p>選擇匯入的Excel檔</p>
+                                </div>
+                                <div class="col-sm">
+                                  <img src="image\2021-04-03_110013.png" style="width:300px;">
+                                </div>
+                              </div>
+                              <hr class="my-5">
+                              <div class="row">
+                                <div class="col-sm">
+                                  <p>選擇匯入的工作表</p>
+                                </div>
+                                <div class="col-sm">
+                                  <img src="image\2021-04-03_221213.png" style="width:300px;">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="heading323">
+                          <h2 class="mb-0">
+                            <button class="btn text-primary btn-block text-left collapsed" type="button"
+                              data-toggle="collapse" data-target="#collapse323" aria-expanded="false"
+                              aria-controls="collapse323">
+                              3.比對匯入的資料，檢查名字是否有重複。
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapse323" class="collapse" aria-labelledby="heading323" data-parent="#accordion132">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-sm">
+                                <p>選擇好匯入的檔案及工作表，系統會先比對姓名是否有重複。</p>
+                                <p>並列出資料庫中名字重複的資料。</p>
+                                <ul class="text-caption">
+                                  <li>同名同姓不同人，勾選「新增」。</li>
+                                  <li>同一個人，若要更新資料，勾選「更新」。</li>
+                                  <li>不要新增或更新，勾選「不匯入」</li>
+                                </ul>
+                              </div>
+                              <div class="col-sm">
+                                <img src="image\2021-04-03_113731.png" style="width:300px;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="heading324">
+                          <h2 class="mb-0">
+                            <button class="btn text-primary btn-block text-left" type="button" data-toggle="collapse"
+                              data-target="#collapse324" aria-expanded="false" aria-controls="collapse324">
+                              4.匯入新的資料。
+                            </button>
+                          </h2>
+                        </div>
+                        <div id="collapse324" class="collapse" aria-labelledby="heading324" data-parent="#accordion132">
+                          <div class="card-body">
+                            <div class="container">
+                              <div class="row">
+                                <div class="col-sm">
+                                  <p>若名字沒有重複，會列出要新增匯入的資料</p>
+                                  <p>預設是「匯入」，也可選擇不匯入。</p>
+                                  <p>按下「匯入」按鈕，開始匯入。</p>
+                                </div>
+                                <div class="col-sm">
+                                  <img src="image\2021-04-03_223615.png" style="width:300px;">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading33">
+                  <h2 class="mb-0">
+                    <button class="btn text-info btn-block text-left collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapse33" aria-expanded="false" aria-controls="collapse33">
+                      刪除多筆資料
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse33" class="collapse" aria-labelledby="heading33" data-parent="#accordion13">
+                  <div class="card-body">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-sm">
+                          <p></p>
+                          <p></p>
+                          <ol>
+                            <li>資料匯時發生錯誤，或是有多筆資料要刪除，可利用資料存入(更新)的時間，查詢出想要刪除的資料。</li>
+                            <li>選擇日期範圍</li>
+                            <li>列出想要刪除的資料</li>
+                            <li>可勾選「取消」</li>
+                            <li>確定後，按「刪除」按鈕，開始刪除。</li>
+                            <li>若刪除若超過500筆，系統自動會分批次刪除。</li>
+                          </ol>
+                        </div>
+                        <div class="col-sm">
+                          <img src="image\2021-04-03_224804.png" style="width:300px;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+              data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <h5>運行環境</h5>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <p>前端：客製化軟體 （手機、平板、電腦）</p>
+                  <p>後端：伺服器、作業系統、資料庫、網站、儲存空間</p>
+                  <p>網路：防火牆、網路設備、頻寬、網址、傳輸加密</p>
+                  <p>資料：定時自動備份、穩定安全可靠</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="#login" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">登入問題</a>
-        <a href="#use" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">使用問題</a>
-        <a href="#mana" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">管理問題</a>
-        <a href="#bye" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">購買問題</a>
-    </div>
-
-    <!-- Page content -->
-    <div class="w3-content w3-large w3-NotoSanse" style="max-width:2000px;margin-top:46px">
-
-        <!-- The Band Section -->
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="login">
-            <h2 class="w3-wide w3-center w3-dark-grey">登入問題</h2>
-
-
-            <button onclick="Accordions('Demo11')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>如何登入使用APP</h3>
-            </button>
-
-            <div id="Demo11" class="w3-container w3-panel w3-margin-left w3-hide" style="margin-bottom: 50px;">
-                <p>
-                <h5>手機：ios 打開 Safari 瀏覽器，在網址列輸入 <a href="modatabank.web.app"><span
-                            class="w3-text-blue">modatabank.web.app</span></a>。
-                </h5>
-                </p>
-                <p>
-                <h5>手機：andriod 打開 Chrome 瀏覽器，在網址列輸入 <a href="modatabank.web.app"
-                        class="w3-text-blue">modatabank.web.app</a>。
-                </h5>
-                </p>
-                <p>
-                <h5>平板：與手機相同。</h5>
-                </p>
-                <p>
-                <h5>電腦：打開 Chrome、Firefox、Safari 任何一種瀏覽器，在網址列輸入 <a href="modatabank.web.app"
-                        class="w3-text-blue">modatabank.web.app</a>。</h5>
-                </p>
-                <p>
-                <h5>在 Line或 Facebook訊息中直接點擊連結，請注意是否用其內建的瀏覽器開啟，盡量用外部瀏覽器開啟。</h5>
-                </p>
-            </div>
-
-            <button onclick="Accordions('Demo15')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>APP如何更新</h3>
-            </button>
-
-            <div id="Demo15" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                <p>
-                <h5>※ v1.2版本以上，首頁會出現網頁重整按鈕，點擊即可更新。</h5>
-                </p>
-                <img src="./image/246C4D44-4417-4671-B1F7-5BEEC18F477D.png" style="width:200px;">
-                <p>
-                <h5>※ 在瀏覽器執行，重整網頁也可以更新。</h5>
-                </p>
-                <p>
-                <h5>※ 若在主畫面中已有儲存APP圖示，直接將APP圖示刪除，再用設成APP方式重新加入。</h5>
-                </p>
-            </div>
-
-
-            <button onclick="Accordions('Demo13')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>如何設成APP</h3>
-            </button>
-
-            <div id="Demo13" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                <p>
-                <h5>1.點擊 Safari下方紅色圈選處</h5>
-                </p>
-                <img src="./image/image-20201018190139965.png" style="width:200px;">
-                <p>
-                <h5>2.選擇加入主畫面</h5>
-                </p>
-                <img src="image/image-20201018190314766.png" style="width:200px;">
-            </div>
-
-
-
-
-
-            <div class="w3-containner w3-margin-bottom" style="margin-bottom: 40px;"> </div>
-            <button onclick="Accordions('Demo12')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>重複登入免輸密碼</h3>
-            </button>
-
-            <div id="Demo12" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                <p>
-                <h5>手機、平板、電腦輸入密碼時，都會詢問要不要記住密碼，若選擇要記住，下次登入就可用自動完成將帳密帶入。</h5>
-                </p>
-            </div>
-
-
-
-            <button onclick="Accordions('Demo14')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>已註冊帳號了不能使用</h3>
-            </button>
-
-            <div id="Demo14" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                <p>
-                <h5>先註冊帳號，後到註冊信箱收信，點選驗證連結，通過email驗證。</h5>
-                </p>
-                <p>
-                <h5>此時還不能登入，要等待管理員審核通過，才可以登入使用。</h5>
-                </p>
-            </div>
-
-
-
-            <button onclick="Accordions('Demo16')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>覺得資料有問題</h3>
-            </button>
-
-            <div id="Demo16" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                <p>
-                <h5>資料多人增刪修，想取得最新資料，可將瀏覽器刷新重新讀取資料，或是登出再登入可讀到最新資料。</h5>
-                </p>
-                <img src="./image/2020-10-19_112534.png" style="width:300px;">
-            </div>
-        </div>
-
-        <!-- The Tour Section -->
-        <div class="" id="use">
-            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-                <h2 class="w3-wide w3-center w3-dark-grey">使用問題</h2>
-
-
-                <button onclick="Accordions('Demo22')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                    <h3>如何新增照片</h3>
-                </button>
-
-                <div id="Demo22" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                    <p>
-                    <h5>要先建立個人基本資料後，才會出現上傳照片畫面選項。</h5>
-                    </p>
-                    <p>
-                    <h5>預設第一張照片為個人頭像。</h5>
-                    </p>
-                </div>
-
-                <button onclick="Accordions('Demo221')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                    <h3>設定為頭像</h3>
-                </button>
-
-                <div id="Demo221" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                    <p>
-                    <h5>有兩張照片以上可選設定為頭像</h5>
-                    </p>
-                    <img src="./image/2020-10-19_095747.png" style="width:300px;">
-                </div>
-
-
-                <button onclick="Accordions('Demo21')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                    <h3>增加或刪除照片</h3>
-                </button>
-
-                <div id="Demo21" class="w3-container w3-panel w3-margin-left w3-hide">
-                    <p>
-                    <h5>1.增加照片</h5>
-                    </p>
-                    <img src="image/2020-10-18_232100.png" style="width:300px;">
-                    <img src="./image/2020-10-18_232253.png" style="width:300px;">
-                    <p>
-                    <p>
-                    <h5>步驟3「按我選擇照片」若不做動，要按久一點。</h5>
-                    </p>
-                    <br /><br /><br />
-                    <h5>2.刪除照片</h5>
-                    </p>
-                    <img src="./image/2020-10-18_232717.png" style="width:300px;">
-                </div>
-
-
-
-
-
-                <button onclick="Accordions('Demo23')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                    <h3>多筆資料匯出檔案</h3>
-                </button>
-
-                <div id="Demo23" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                    <p>
-                    <h5>1.先查詢符合條件的資料</h5>
-                    </p>
-                    <p>
-                    <h5>2.按匯出按鈕將資料存檔</h5>
-                    </p>
-                    <img src="./image/2020-10-19_100213.png" style="width:300px;">
-                </div>
-
-
-                <button onclick="Accordions('Demo24')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                    <h3>列印單筆資料</h3>
-                </button>
-
-                <div id="Demo24" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                    <p>
-                    <h5>先進入詳細資料畫面</h5>
-                    </p>
-
-                    <img src="./image/2020-10-19_100844.png" style="width:300px;">
-                </div>
-
-
-                <button onclick="Accordions('Demo25')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                    <h3>增加分類</h3>
-                </button>
-
-                <div id="Demo25" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                    <p>
-                    <h5>現有分類中找不到，按「編輯分類」新增。</h5>
-                    </p>
-                    <img src="./image/2020-10-21_153917.png" style="width:300px;">
-                </div>
-
-
-                <button onclick="Accordions('Demo26')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                    <h3>查詢</h3>
-                </button>
-
-                <div id="Demo26" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                    <p>
-                    <h5>1.先從縣市、分類、姓名、星級、紅點設定查詢條件，條件越多查詢速度越快。</h5>
-                    </p>
-                    <p>
-                    <h5> 記得要按「雲端搜尋」。</h5>
-                    </p>
-                    <p>
-                    <h5>2.符合條件的資料會下載到本機，要再進一步搜尋可用空白隔開多個關鍵字過濾資料。</h5>
-                    </p>
-                    <p>
-                    <h5> 本機搜尋輸入文字後即開始過濾。</h5>
-                    </p>
-                    <img src="./image/2020-10-19_114045.png" style="width:300px;">
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="mana">
-            <h2 class="w3-wide w3-center w3-dark-grey">管理問題</h2>
-
-
-            <button onclick="Accordions('Demo31')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>核准使用者</h3>
-            </button>
-
-            <div id="Demo31" class="w3-container w3-panel w3-margin-left w3-hide">
-
-                <img src="./image/2020-10-19_101752.png" style="width:300px;">
-
-            </div>
-
-
-
-            <button onclick="Accordions('Demo33')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>設定系統管理員</h3>
-            </button>
-
-            <div id="Demo33" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                <img src="./image/2020-10-19_102123.png" style="width:300px;">
-            </div>
-
-
-            <button onclick="Accordions('Demo34')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>忘記或重設密碼</h3>
-            </button>
-
-            <div id="Demo34" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                <img src="./image/image-20201018185057384.png" style="width:300px;">
-            </div>
-
-
-            <button onclick="Accordions('Demo35')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>刪除使用者、重新註冊</h3>
-            </button>
-
-            <div id="Demo35" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                <p>
-                <h5>核對使用者註冊資料，不正確可將之刪除再重新註冊。</h5>
-                </p>
-                <p>
-                <h5>要將使用者停用，刪除。</h5>
-                </p>
-                <img src="./image/2020-10-19_102355.png" style="width:300px;">
-            </div>
-
-
-            <button onclick="Accordions('Demo36')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                <h3>公告事項</h3>
-            </button>
-
-            <div id="Demo36" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                <p>
-                <h5>重要事項可用系統公告週知。</h5>
-                </p>
-                <p>
-                <h5>設定首頁停留較長時間，以便閱讀。</h5>
-                </p>
-                <img src="./image/2020-10-19_103323.png" style="width:300px;">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <br /> <br /> <br /> <br /> <br />
-                <p>
-                <h5>首頁出現公告。</h5>
-                </p>
-                <img src="./image/2020-10-19_104724.png" style="width:300px;">
-            </div>
-        </div>
-
-        <div class="" id="bye">
-
-            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-                <h2 class="w3-wide w3-center w3-dark-grey">購買問題</h2>
-
-                <button onclick="Accordions('Demo4')" class="w3-button w3-block w3-left-align w3-border-bottom">
-                    <h3>運行環境</h3>
-                </button>
-
-                <div id="Demo4" class="w3-container w3-hide" style="margin-bottom: 50px;">
-                    <p>
-                    <h5>伺服器 - 萬</h5>
-                    </p>
-                    <p>
-                    <h5>防火牆 - 萬</h5>
-                    </p>
-                    <p>
-                    <h5>網路設備 - 萬</h5>
-                    </p>
-                    <p>
-                    <h5>網路頻寬、網址 - 萬/年</h5>
-                    </p>
-                    <p>
-                    <h5>作業系統、資料庫、網站、傳輸加密 - 萬</h5>
-                    </p>
-                    <p>
-                    <h5>客製化軟體 （手機、平板、電腦） - 萬</h5>
-                    </p>
-                    <p>
-                    <h5>系統運作、資料維護 - 萬/年</h5>
-                    </p>
-
-                </div>
-            </div>
-        </div>
-        <!-- End Page Content -->
-    </div>
-
-
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-    </footer>
-
-    <script>
-
-
-        // Used to toggle the menu on small screens when clicking on the menu button
-        function myFunction() {
-            var x = document.getElementById("navDemo");
-            if (x.className.indexOf("w3-show") == -1) {
-                CloseAccordions()
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        var modal = document.getElementById('ticketModal');
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-        // 手風琴
-        function Accordions(id) {
-            var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-                // CloseAccordions()
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
-        //關閉手風琴全部
-        function CloseAccordions() {
-            var list = document.getElementsByClassName("w3-show")
-            if (list.length > 0) {
-                for (let item of list) {
-                    // console.log(item)
-                    item.className = item.className.replace(" w3-show", "");
-                }
-
-
-                // x.className = x.className.replace(" w3-show", "");
-            }
-        }
-
-    </script>
-
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js'></script>
 </body>
 
 </html>
